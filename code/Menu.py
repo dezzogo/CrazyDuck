@@ -13,7 +13,6 @@ class Menu:
         self.rect = self.surf.get_rect(left=0, top=0)
 
     def run(self, ):
-        pass
         pygame.mixer_music.load('./asset/Menu.mp3')
         pygame.mixer_music.play(-1)
         while True:
@@ -22,7 +21,7 @@ class Menu:
             self.menu_text(50, "Duck", COLOR_NEON_ORANGE, ((WIN_WIDTH / 2), 120))
 
             for i in range(len(MENU_OPTION)):
-                self.menu_text(30, MENU_OPTION[i], COLOR_DEEP_PINK, ((WIN_WIDTH / 2), 200 + 25 * i))
+                self.menu_text(30, MENU_OPTION[i], COLOR_NEON_ORANGE, ((WIN_WIDTH / 2), 200 + 30 * i))
 
             pygame.display.flip()
 
